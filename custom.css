@@ -72,6 +72,7 @@ footer li {
 .navbar {
     background-color: #0080cc;
     height: 100px;
+    margin-bottom: none !important;
 }
 .navbar-brand > img {
     height: 50px;
