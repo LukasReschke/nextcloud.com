@@ -136,6 +136,10 @@ footer li {
     border: none;
     border-radius: 100px;
     font-weight: bold;
+    padding-top: 18px;
+    height: 60px;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
 }
 
 /**
