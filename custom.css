@@ -247,3 +247,31 @@ footer li {
     color: #2a2a36;
     padding-bottom: 40px;
 }
+
+/**
+ * Home page: perfect-for-home-and-business
+ */
+
+#perfect-for-home-and-business {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 0;
+    padding-right: 0;
+    background-image: url('./img/home/perfect-for-home-and-business.png');
+    background-size: cover;
+}
+#perfect-for-home-and-business h2 {
+    font-size: 60px;
+    line-height: 0.9;
+    color: #2a2a36;
+    width: 471px;
+}
+#perfect-for-home-and-business p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.6;
+    color: #555555;
+    width: 469px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
