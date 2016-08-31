@@ -14,7 +14,7 @@ $(window).load(function() {
         loop: false,
         autoplay: false,
         autoloadSegments: false,
-        path: '../img/home/community/data.json'// path to your data.json file you rendered from AE
+        path: 'img/home/community/data.json'// path to your data.json file you rendered from AE
 
     };
     var anim;
