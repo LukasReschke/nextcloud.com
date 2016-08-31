@@ -140,6 +140,11 @@ footer li {
 .jumbotron > .container-fluid > .col-md-6 {
     padding-left: 6%;
 }
+.jumbotron > .container-fluid > .col-md-6 > p > a {
+    width: 290px;
+    height: 60px;
+    padding-top: 16px
+}
 
 /**
  * Home page: Why Nextcloud?
