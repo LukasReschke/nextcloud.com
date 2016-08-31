@@ -237,8 +237,14 @@ footer li {
 /**
  * Home page: Why Nextcloud?
  */
+.icon-row {
+    padding-bottom: 100px;
+}
 .icon-row img {
     height: 200px;
+}
+.icon-row h4 {
+    padding-top: 39px;
 }
 .highlights {
     font-size: 20px;
