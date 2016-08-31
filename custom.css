@@ -92,6 +92,8 @@ footer li {
 .navbar > .container-fluid {
     margin-left: 5%;
     margin-right: 5%;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
 }
 
 /**
@@ -117,6 +119,7 @@ footer li {
     background-size: 50% auto, cover;
     height: calc(100vh - 100px);
     min-height: 620px;
+    border-radius: 0 !important;
 }
 .jumbotron h1 {
     padding-top: 200px;
@@ -139,8 +142,8 @@ footer li {
 }
 .jumbotron > .container-fluid {
     position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+    top: calc(50% - 100%);
+    transform: translateY(-40%);
 }
 .jumbotron > .container-fluid > .col-md-6 {
     padding-left: 6%;
