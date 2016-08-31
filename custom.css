@@ -155,7 +155,7 @@ footer li {
     margin-bottom: 0;
     background-repeat: no-repeat;
     background-position: bottom 0 right 0;
-    background-size: 50% auto, cover;
+    background-size: 55% auto, cover;
     height: calc(100vh - 100px);
     min-height: 400px;
     border-radius: 0 !important;
