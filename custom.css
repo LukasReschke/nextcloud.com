@@ -89,6 +89,10 @@ footer li {
     border: 1px solid white;
     border-radius: 41px;
 }
+.navbar > .container-fluid {
+    margin-left: 10%;
+    margin-right: 10%;
+}
 
 /**
  * Overwrite button colors
