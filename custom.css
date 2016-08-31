@@ -88,7 +88,9 @@ footer li {
 #navbar .btn-primary {
     background-color: #0080cc;
     border: 1px solid white;
-    border-radius: 41px;
+    padding-top: 0;
+    font-size: 16px;
+    height: inherit;
 }
 .navbar > .container-fluid {
     margin-left: 5%;
