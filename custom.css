@@ -134,6 +134,14 @@ footer li {
     background: transparent;
     transition: all 0s ease;
 }
+.navbar-toggle {
+    background-color: white;
+    color: black;
+    margin-top: 25px;
+}
+.navbar-toggle .icon-bar {
+    background-color: #555555;
+}
 
 /**
  * Overwrite button colors
