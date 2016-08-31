@@ -96,7 +96,6 @@ footer li {
     padding-left: 0 !important;
 }
 .navbar a:hover {
-    font-weight: 600 !important;
     background: none !important;
     border-bottom: 1px solid white;
 }
