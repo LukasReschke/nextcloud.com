@@ -72,7 +72,6 @@ footer li {
 .navbar {
     background-color: #0080cc;
     height: 100px;
-    margin-bottom: 0;
 }
 .navbar-brand > img {
     height: 50px;
@@ -143,7 +142,7 @@ footer li {
 }
 .jumbotron > .container-fluid {
     position: relative;
-    top: calc(50% - 100%);
+    top: calc(50% - 100px);
     transform: translateY(-40%);
 }
 .jumbotron > .container-fluid > .col-md-6 {
