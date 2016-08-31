@@ -137,6 +137,11 @@ footer li {
     height: 100%;
     width: 100%;
 }
+.jumbotron > .container-fluid {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
 .jumbotron > .container-fluid > .col-md-6 {
     padding-left: 6%;
 }
