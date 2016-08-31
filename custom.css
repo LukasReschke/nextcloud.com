@@ -129,10 +129,13 @@ footer li {
  * Home page jumbotron
  */
 .jumbotron {
-    background-image: linear-gradient(to bottom, #0080cc, #3e9ed8 100%, #d8d8d8);
+    background-image: url("./img/home/t-o-p-banner.png"),linear-gradient(to bottom, #0080cc, #3e9ed8 100%, #d8d8d8);
     margin-top: 100px;
     padding-bottom: 0;
     margin-bottom: 0;
+    background-repeat: no-repeat;
+    background-position: bottom 0 right 0;
+    background-size: auto 90%, cover;
 }
 .jumbotron h1 {
     color: white;
