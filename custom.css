@@ -50,8 +50,10 @@ h5 {
  */
 footer {
     background-color: #2a2a36;
+    height: 349px;
 }
 footer h1 {
+    margin-top:70px;
     font-size: 19px;
     font-weight: bold;
     line-height: 1.8;
@@ -257,7 +259,8 @@ footer li {
  */
 
 #perfect-for-home-and-business {
-    padding-top: 50px;
+    margin-top: 100px;
+    padding-top: 80px;
     padding-bottom: 50px;
     padding-left: 0;
     padding-right: 0;
