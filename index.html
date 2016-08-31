@@ -12,12 +12,28 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="./js/jquery.waypoints.min.js"></script>
     <script src="./js/bodymovin.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
     <script src="./js/home.js"></script>
 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
     <link href="./css/bootstrap.min.css" rel="stylesheet">
     <link href="./custom.css" rel="stylesheet">
+    <style type="text/css">
+        #pinContainer {
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .panel {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
+    </style>
 </head>
 <body>
 
@@ -111,26 +127,92 @@
         <p><a class="btn btn-primary btn-lg" href="#" role="button">Nextcloud Enterprise <span class="glyphicon glyphicon-arrow-right"></span></a></p>
     </div>
 </div>
-
-<div class="container">
-    <div class="row introducing-nc-10">
+<section class="demo" id="section-wipes">
+    <div id="pinContainer">
         <h2 class="text-center section-title">Introducing Nextcloud 10</h2>
-        <div class="container">
-            <div class="container col-md-6">
-                <img src="./img/home/introducing-nc-10.png">
+
+        <section class="panel panel-workflow">
+            <div class="container">
+                <div class="row introducing-nc-10">
+                    <div class="container">
+                        <div class="container col-md-6">
+                            <img src="./img/home/introducing-nc-10.png">
+                        </div>
+                        <div class="container col-md-6 right-text-grey">
+                            <h5>Secure, Fine Grained Control over
+                                Data Access and Workflows</h5>
+                            <p>Monitoring, security and performance improvements
+                                complement this release, enabling larger and more efficient
+                                Nextcloud installations.</p>
+                            <br/>
+                            <p>Learn more</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="container col-md-6 right-text-grey">
-                <h5>Secure, Fine Grained Control over
-                    Data Access and Workflows</h5>
-                <p>Monitoring, security and performance improvements
-                    complement this release, enabling larger and more efficient
-                    Nextcloud installations.</p>
-                <br/>
-                <p>Learn more</p>
+        </section>
+        <section class="panel panel-monitoring">
+            <div class="container">
+                <div class="row introducing-nc-10">
+                    <div class="container">
+                        <div class="container col-md-6">
+                            <img src="./img/home/monitoring-nc-10.png">
+                        </div>
+                        <div class="container col-md-6 right-text-grey">
+                            <h5>Faster and more reliable operation at scale</h5>
+                            <p>Nextcloud 10 introduces the Server Information app which provides a way for admins to monitor
+                                the health and performance of a Nextcloud system. Besides a graphical UI, an API endpoint
+                                provided makes it possible for system administrators to import this data in their monitoring
+                                app so they can keep an eye on Nextcloud operations from the same place they keep an eye
+                                on the rest of their infrastructure.</p>
+                            <br/>
+                            <p>Learn more</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
+        <section class="panel panel-authentication">
+            <div class="container">
+                <div class="row introducing-nc-10">
+                    <div class="container">
+                        <div class="container col-md-6">
+                            <img src="./img/home/auth-nc-10.png">
+                        </div>
+                        <div class="container col-md-6 right-text-grey">
+                            <h5>Authentication and security</h5>
+                            <p>
+                                Nextcloud 10 delivers security improvements in several areas. Plugin based Two Factor
+                                Authentication enables an optional extra layer of protection for logins, brute force
+                                protection makes it harder for attackers to guess passwords and session management is
+                                introduced to enable administrators and users to monitor and invalidate active sessions.
+                            </p>
+                            <br/>
+                            <p>Learn more</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
-</div>
+    <script>
+        $(function () {
+            var controller = new ScrollMagic.Controller();
+            var wipeAnimation = new TimelineMax()
+                    .fromTo("section.panel.panel-monitoring",    1, {y: "100%"}, {y: "0%", ease: Linear.easeNone})
+                    .fromTo("section.panel.panel-authentication", 1, {y: "100%"}, {y: "0%", ease: Linear.easeNone});
+            new ScrollMagic.Scene({
+                triggerElement: "#pinContainer",
+                triggerHook: "onLeave",
+                duration: "300%"
+            })
+                    .setPin("#pinContainer")
+                    .setTween(wipeAnimation)
+                    .addIndicators()
+                    .addTo(controller);
+        });
+    </script>
+</section>
 
 <div class="container-fluid" id="stay-up-to-date">
     <div class="row stay-up-to-date">
