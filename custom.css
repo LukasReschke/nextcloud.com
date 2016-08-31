@@ -98,12 +98,43 @@ footer li {
 .navbar .active {
     font-weight: 600;
     border-bottom: 1px solid white;
+    margin-top: -1px;
 }
-.navbar a:hover {
-    font-weight: 600;
-    background: none !important;
-    border-bottom: 1px solid white;
+.navbar-nav li a:hover {
+    background: none !important;;
 }
+.navbar-nav li:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    width: 0;
+    transition: width 0s ease, background .5s ease;
+}
+.navbar-nav li:after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    width: 0;
+    background: white;
+    transition: width .5s ease;
+}
+.navbar-nav li:hover:before {
+    width: 100%;
+    background: white;
+    transition: width .5s ease;
+}
+.navbar-nav li:hover:after {
+    width: 100%;
+    background: transparent;
+    transition: all 0s ease;
+}
+
 /**
  * Overwrite button colors
  */
