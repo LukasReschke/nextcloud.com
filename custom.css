@@ -282,3 +282,6 @@ footer li {
 #perfect-for-home-and-business > div {
     margin-left: 5%;
 }
+#perfect-for-home-and-business .btn-primary {
+    width: 300px;
+}
