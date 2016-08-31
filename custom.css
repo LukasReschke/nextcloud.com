@@ -13,7 +13,7 @@ h1 {
     line-height: 60px;
     letter-spacing: -2px;
     color: #2a2a36;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 h2 {
@@ -72,6 +72,7 @@ footer li {
 .navbar {
     background-color: #0080cc;
     height: 100px;
+    margin-bottom: 0;
 }
 .navbar-brand > img {
     height: 50px;
