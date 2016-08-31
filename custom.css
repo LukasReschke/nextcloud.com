@@ -121,11 +121,13 @@ footer li {
 .jumbotron h1 {
     padding-top: 200px;
     color: white;
+    width: 520px;
 }
 .jumbotron h2 {
     color: white;
     font-size: 18px;
     line-height: 1.6;
+    width: 377px;
 }
 .jumbotron .btn-primary {
     margin-top: 50px;
