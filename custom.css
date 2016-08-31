@@ -116,6 +116,7 @@ footer li {
     background-position: bottom 0 right 0;
     background-size: 50% auto, cover;
     height: calc(100vh - 100px);
+    min-height: 620px;
 }
 .jumbotron h1 {
     padding-top: 200px;
