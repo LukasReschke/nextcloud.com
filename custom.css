@@ -101,7 +101,7 @@ footer li {
     margin-top: -1px;
 }
 .navbar-nav li a:hover {
-    background: none !important;;
+    background: none !important;
 }
 .navbar-nav li:before {
     content: '';
@@ -124,12 +124,12 @@ footer li {
     background: white;
     transition: width .5s ease;
 }
-.navbar-nav li:hover:before {
+.navbar-nav li:not(.btn-primary):hover:before {
     width: 100%;
     background: white;
     transition: width .5s ease;
 }
-.navbar-nav li:hover:after {
+.navbar-nav li:not(.btn-primary):hover:after {
     width: 100%;
     background: transparent;
     transition: all 0s ease;
