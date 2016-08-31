@@ -144,14 +144,20 @@ footer li {
     position: relative;
     top: calc(50% - 100px);
     transform: translateY(-40%);
+    padding-left: 0px;
+    padding-right: 0px;
 }
 .jumbotron > .container-fluid > .col-md-6 {
-    padding-left: 6%;
+    padding-left: 5%;
 }
 .jumbotron > .container-fluid > .col-md-6 > p > a {
     width: 290px;
     height: 60px;
     padding-top: 16px
+}
+.container-fluid > .jumbotron {
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 /**
