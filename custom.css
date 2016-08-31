@@ -290,3 +290,10 @@ footer li {
 #perfect-for-home-and-business .btn-primary {
     width: 300px;
 }
+
+/**
+ * Home page: Stay up to date
+ */
+#stay-up-to-date a {
+    width: 300px;
+}
