@@ -1,0 +1,201 @@
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Open Sans'), local('OpenSans'), url(/fonts/OpenSans-Regular.woff) format('woff'), url(/fonts/OpenSans-Regular.ttf) format('ttf');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(/fonts/OpenSans-Semibold.woff) format('woff'), url(/fonts/OpenSans-Semibold.ttf) format('ttf');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: normal;
+    src: local('Open Sans Italic'), local('OpenSans-Italic'), url(/fonts/OpenSans-Italic.woff) format('woff'), url(/fonts/OpenSans-Bold.ttf) format('ttf');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: lighter;
+    src: local('Open Sans Light'), local('OpenSans-Light'), url(/fonts/OpenSans-Light.woff) format('woff'), url(/fonts/OpenSans-Light.ttf) format('ttf');
+}
+
+body {
+    font-family: 'Open Sans', Frutiger, Calibri, 'Myriad Pro', Myriad, sans-serif !important;
+}
+
+/**
+ * Default definition
+ */
+
+h1 {
+    font-size: 60px;
+    line-height: 0.9;
+    letter-spacing: -2px;
+    color: #2a2a36;
+}
+
+h2 {
+    font-size: 60px;
+    font-weight: 300;
+    line-height: 0.9;
+    color: #2a2a36;
+}
+
+h3 {
+    font-size: 35px;
+    font-weight: 300;
+    line-height: 1.5;
+    text-align: center;
+    color: #2a2a36;
+}
+h4 {
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 1.36;
+    color: #2a2a36;
+}
+h5 {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.5;
+    letter-spacing: -1px;
+    color: #2a2a36;
+}
+
+/**
+ * Footer
+ */
+footer {
+    background-color: #2a2a36;
+}
+footer h1 {
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 1.8;
+    letter-spacing: -0.9px;
+    color: #8e8e8e;
+}
+footer ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+footer li {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #ffffff;
+}
+/**
+ * Navbar
+ */
+.navbar {
+    background-color: #0080cc;
+    height: 100px;
+}
+.navbar-brand > img {
+    height: 50px;
+    margin-top: 7px;
+}
+#navbar a {
+    color: white;
+}
+#navbar {
+    padding-top: 25px;
+    font-size: 16px;
+}
+#navbar .btn-primary {
+    background-color: #0080cc;
+    border: 1px solid white;
+    border-radius: 41px;
+}
+
+/**
+ * Overwrite button colors
+ */
+.btn-primary {
+    background-color: #0082c9;
+    border: none;
+    border-radius: 100px;
+    font-weight: bold;
+}
+
+/**
+ * Home page jumbotron
+ */
+.jumbotron {
+    background-image: linear-gradient(to bottom, #0080cc, #3e9ed8 100%, #d8d8d8);
+    margin-top: 100px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.jumbotron h1 {
+    color: white;
+}
+.jumbotron h2 {
+    color: white;
+    font-size: 18px;
+    line-height: 1.6;
+}
+.jumbotron .btn-primary {
+    margin-top: 50px;
+    width: 70%;
+}
+.jumbotron img {
+    height: 100%;
+    width: 100%;
+}
+
+/**
+ * Home page: Why Nextcloud?
+ */
+.icon-row img {
+    height: 200px;
+}
+.highlights {
+    font-size: 20px;
+    color: #434343;
+    line-height: 1.36;
+}
+.section-title {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+/**
+ * Home page: Introducing Nextcloud 10
+ */
+
+.right-text-grey p {
+    font-size: 18px;
+    color: #555555;
+}
+.introducing-nc-10  {
+    padding-bottom: 75px;
+}
+.introducing-nc-10 img {
+    width: 100%;
+}
+.introducing-nc-10 h5 {
+    padding-top: 30px;
+}
+
+/**
+ * Home page: Stay up to date
+ */
+.stay-up-to-date {
+    background-color: #eaeaea;
+}
+.stay-up-to-date h5 {
+    font-size: 35px;
+    font-weight: 300;
+    line-height: 1.5;
+    text-align: center;
+    color: #2a2a36;
+    padding-bottom: 40px;
+}
