@@ -129,7 +129,7 @@ footer li {
  * Home page jumbotron
  */
 .jumbotron {
-    background-image: url("./img/home/t-o-p-banner.png"),linear-gradient(to bottom, #0080cc, #3e9ed8 100%, #d8d8d8);
+    background-image: url("./img/home/t-o-p-banner@2x.png"),linear-gradient(to bottom, #0080cc, #3e9ed8 100%, #d8d8d8);
     margin-top: 100px;
     padding-bottom: 0;
     margin-bottom: 0;
