@@ -104,8 +104,10 @@ footer li {
     font-weight: 600;
     border-bottom: 3px solid white;
 }
-.navbar-nav li{
-    margin: 0px 0px 0px 10px;
+@media (min-width: 768px) {
+	.navbar-nav li{
+    		margin: 0px 0px 0px 10px;
+	}	
 }
 .navbar-nav li a:hover {
     background: none !important;
