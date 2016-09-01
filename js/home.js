@@ -3,12 +3,10 @@ $(window).load(function() {
      * Listen to scroll to change header opacity class
      */
     function checkScroll(){
-        var startY = $('.navbar').height() * 2;
-
-        if($(window).scrollTop() > startY){
+        if(document.body.scrollTop !== 0){
             $('.navbar img').attr('src', './img/logo_nextcloud_blue.svg');
             $('.navbar').addClass('scrolled');
-        }else{
+        } else {
             $('.navbar img').attr('src', './img/logo_nextcloud_white.svg');
             $('.navbar').removeClass('scrolled');
         }
