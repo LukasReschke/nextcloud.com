@@ -297,3 +297,31 @@ footer li {
 #stay-up-to-date a {
     width: 300px;
 }
+
+/**
+ * Mobile
+ */
+
+@media (max-width: 768px) {
+
+.jumbotron {
+    background-size: 63% auto, cover;
+}    
+.jumbotron h1 {
+    width: 250px;
+    letter-spacing: -1px;
+    font-size: 35px;
+    line-height: 1.2;
+}
+.jumbotron h2 {
+    font-size: 16px;
+    line-height: 1.6;
+    width: 250px;
+}
+
+.jumbotron > .container-fluid > .col-md-6 > p > a {
+    width: 160px;
+    height: 60px;
+    padding-top: 22px;
+    font-size:14px;
+}
