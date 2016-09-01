@@ -103,7 +103,9 @@ footer li {
 .navbar .active {
     font-weight: 600;
     border-bottom: 3px solid white;
-    margin-top: -3px;
+}
+.navbar-nav li{
+    margin: 0px 0px 0px 10px;
 }
 .navbar-nav li a:hover {
     background: none !important;
