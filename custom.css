@@ -82,6 +82,9 @@ footer li {
 }
 #navbar a {
     color: white;
+    -webkit-box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.09);
+    -moz-box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.09);
+    box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.09);
 }
 #navbar {
     padding-top: 25px;
