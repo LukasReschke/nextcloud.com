@@ -6,10 +6,10 @@ $(window).load(function() {
         var startY = $('.navbar').height() * 2;
 
         if($(window).scrollTop() > startY){
-            $('.navbar img').attr('src', '../img/logo_nextcloud_blue.svg');
+            $('.navbar img').attr('src', './img/logo_nextcloud_blue.svg');
             $('.navbar').addClass('scrolled');
         }else{
-            $('.navbar img').attr('src', '../img/logo_nextcloud_white.svg');
+            $('.navbar img').attr('src', './img/logo_nextcloud_white.svg');
             $('.navbar').removeClass('scrolled');
         }
     }
