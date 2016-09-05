@@ -261,6 +261,10 @@ footer {
 /**
  * Home page: Introducing Nextcloud 10
  */
+.right-text-grey {
+  opacity: 0;
+  padding-top: 25px; }
+
 .right-text-grey p {
   font-size: 18px;
   color: #555555; }

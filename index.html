@@ -142,14 +142,16 @@
                     <div class="container col-md-6">
                         <img src="./img/home/introducing-nc-10.png">
                     </div>
-                    <div class="container col-md-6 right-text-grey">
+                    <div class="container col-md-6 right-text-grey" style="opacity: 1; padding-top: 0 !important;">
                         <h5>Secure, Fine Grained Control over
                             Data Access and Workflows</h5>
                         <p>Monitoring, security and performance improvements
                             complement this release, enabling larger and more efficient
                             Nextcloud installations.</p>
                         <br/>
-                        <p>Learn more</p>
+                        <p>
+                            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more <span class="glyphicon glyphicon-arrow-right"></span></a>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -170,7 +172,9 @@
                             app so they can keep an eye on Nextcloud operations from the same place they keep an eye
                             on the rest of their infrastructure.</p>
                         <br/>
-                        <p>Learn more</p>
+                        <p>
+                            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more <span class="glyphicon glyphicon-arrow-right"></span></a>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -192,7 +196,9 @@
                             introduced to enable administrators and users to monitor and invalidate active sessions.
                         </p>
                         <br/>
-                        <p>Learn more</p>
+                        <p>
+                            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more <span class="glyphicon glyphicon-arrow-right"></span></a>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -214,7 +220,9 @@
                             introduced to enable administrators and users to monitor and invalidate active sessions.
                         </p>
                         <br/>
-                        <p>Learn more</p>
+                        <p>
+                            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more <span class="glyphicon glyphicon-arrow-right"></span></a>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -223,7 +231,7 @@
 </div>
 <script>
     var controller = new ScrollMagic.Controller();
-    new ScrollMagic.Scene({triggerElement: '#pinContainer', triggerHook: 'onLeave', duration: 500})
+    new ScrollMagic.Scene({triggerElement: '#pinContainer', triggerHook: 'onLeave', duration: 750})
             .addTo(controller)
             .setPin('#pinContainer')
             .on('enter leave', function (e) {
@@ -240,6 +248,14 @@
                 $('#pinContainer section:nth('+currentProgress+')').removeClass('hidden');
                 $('.introducing-slider .slider-oval').html('');
                 $('.introducing-slider .slider-oval:nth('+currentProgress+')').html('<div class="active"></div>');
+
+                if(currentProgress > 0) {
+                    $('#pinContainer section:nth(' + currentProgress + ') .right-text-grey')
+                            .animate({
+                                'opacity': 1,
+                                'margin-top': '-25px'
+                            }, 750);
+                }
             });
 </script>
 
