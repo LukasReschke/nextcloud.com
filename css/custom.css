@@ -59,7 +59,9 @@ footer {
   footer li {
     font-size: 15px;
     line-height: 1.8;
-    color: #ffffff; }
+    color: #ffffff;
+    width: 140px;
+    padding-left: 16px; }
 
 /**
  * Navbar
