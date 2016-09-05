@@ -1,40 +1,43 @@
+$dark-blue: #2a2a36;
+$nextcloud-blue: #0082c9;
+$medium-grey: #555555;
+$white: #ffffff;
+$font-stack: 'Open Sans', Frutiger, Calibri, 'Myriad Pro', Myriad, sans-serif !important;
+
 body {
-    font-family: 'Open Sans', Frutiger, Calibri, 'Myriad Pro', Myriad, sans-serif !important;
+    font-family: $font-stack;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
 /**
- * Default definition
+ * Headers
  */
-
 h1 {
     font-size: 60px;
     line-height: 60px;
     letter-spacing: -2px;
-    color: #2a2a36;
+    color: $nextcloud-blue;
     font-weight: 500;
 }
-
 h2 {
     font-size: 60px;
     font-weight: 300;
     line-height: 0.9;
-    color: #2a2a36;
+    color: $nextcloud-blue;
 }
-
 h3 {
     font-size: 35px;
     font-weight: 300;
     line-height: 1.5;
     text-align: center;
-    color: #2a2a36;
+    color: $nextcloud-blue;
 }
 h4 {
     font-size: 25px;
     font-weight: bold;
     line-height: 1.36;
-    color: #2a2a36;
+    color: $nextcloud-blue;
     margin-bottom: 20px;
 }
 h5 {
@@ -42,7 +45,7 @@ h5 {
     font-weight: bold;
     line-height: 1.5;
     letter-spacing: -1px;
-    color: #2a2a36;
+    color: $nextcloud-blue;
 }
 
 /**
@@ -51,23 +54,26 @@ h5 {
 footer {
     background-color: #2a2a36;
     height: 349px;
-}
-footer h1 {
-    margin-top:70px;
-    font-size: 19px;
-    font-weight: bold;
-    line-height: 1.8;
-    letter-spacing: -0.9px;
-    color: #8e8e8e;
-}
-footer ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-footer li {
-    font-size: 15px;
-    line-height: 1.8;
-    color: #ffffff;
+
+    h1 {
+        margin-top:70px;
+        font-size: 19px;
+        font-weight: bold;
+        line-height: 1.8;
+        letter-spacing: -0.9px;
+        color: #8e8e8e;
+    }
+
+    ul {
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+    li {
+        font-size: 15px;
+        line-height: 1.8;
+        color: #ffffff;
+    }
 }
 /**
  * Navbar
@@ -81,29 +87,29 @@ footer li {
     height: 50px;
     margin-top: 7px;
 }
-#navbar a {
-    color: white;
-}
 #navbar {
     padding-top: 25px;
     font-size: 16px;
-}
-#navbar .btn-primary {
-    background-color: #0080cc;
-    border: 1px solid white;
-    padding-top: 0;
-    font-size: 16px;
-    height: inherit;
+    a {
+        color: white;
+    }
+    .btn-primary {
+        background-color: #0080cc;
+        border: 1px solid white;
+        padding-top: 0;
+        font-size: 16px;
+        height: inherit;
+    }
+    .active {
+        font-weight: 600;
+        border-bottom: 3px solid white;
+    }
 }
 .navbar > .container-fluid {
     margin-left: 5%;
     margin-right: 5%;
     padding-right: 0 !important;
     padding-left: 0 !important;
-}
-.navbar .active {
-    font-weight: 600;
-    border-bottom: 3px solid white;
 }
 @media (min-width: 768px) {
 	.navbar-nav li{
@@ -169,7 +175,7 @@ footer li {
  * Overwrite button colors
  */
 .btn-primary {
-    background-color: #0082c9;
+    background-color: $nextcloud-blue;
     border: none;
     border-radius: 100px;
     font-weight: bold;
@@ -183,7 +189,7 @@ footer li {
  * Home page jumbotron
  */
 .jumbotron {
-    background-image: url("./img/home/t-o-p-banner@2x.png"),linear-gradient(to bottom, #0080cc, #3e9ed8 100%, #d8d8d8);
+    background-image: url("../img/home/t-o-p-banner@2x.png"),linear-gradient(to bottom, #0080cc, #3e9ed8 100%, #d8d8d8);
     margin-top: 100px;
     padding-bottom: 0;
     margin-bottom: 0;
@@ -195,7 +201,7 @@ footer li {
     border-radius: 0 !important;
 }
 .jumbotron h1 {
-    padding-top: 0px;
+    padding-top: 0;
     color: white;
     width: 520px;
 }
@@ -305,14 +311,14 @@ footer li {
 #perfect-for-home-and-business h2 {
     font-size: 60px;
     line-height: 0.9;
-    color: #2a2a36;
+    color: #ffffff;
     width: 471px;
 }
 #perfect-for-home-and-business p {
     font-size: 18px;
     font-weight: 300;
     line-height: 1.6;
-    color: #555555;
+    color: #ffffff;
     width: 469px;
     padding-top: 30px;
     padding-bottom: 30px;
