@@ -227,18 +227,20 @@ footer {
  * Collapsed navbar
  */
 .navbar-collapse {
-    padding-left: 0;
-    padding-right: 0;
-    width: 100vw;
-    min-height: 100vh;
-    background-color: $nextcloud-blue;
-    margin-left: -6% !important;
+    @media (max-width: $break-small) {
+        padding-left: 0;
+        padding-right: 0;
+        width: calc(100vw + 1%);
+        min-height: 100vh;
+        background-color: $nextcloud-blue;
+        margin-left: -6% !important;
 
-    ul {
-        margin-right: 5%;
-        margin-left: 5%;
-        li {
-            padding-top: 3vh;
+        ul {
+            margin-right: 5%;
+            margin-left: 5%;
+            li {
+                padding-top: 3vh;
+            }
         }
     }
 }
