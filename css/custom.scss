@@ -167,8 +167,23 @@ footer {
 #navbar {
     padding-top: 25px;
     font-size: 16px;
-    a {
-        color: white;
+    @media (min-width: $navbar-breaksize) {
+        a {
+            color: white;
+        }
+        .active a {
+            border-bottom: 3px solid white;
+        }
+    }
+    @media (max-width: $navbar-breaksize) {
+        .active {
+            a {
+                color: white;
+            }
+        }
+        a {
+            color: #75badd;
+        }
     }
     .btn-primary {
         background-color: #0080cc;
@@ -176,10 +191,26 @@ footer {
         padding-top: 0;
         font-size: 16px;
         height: inherit;
+        @media (max-width: $navbar-breaksize) {
+            position: fixed;
+            bottom: 0;
+            margin-left: -5%;
+            width: 100%;
+            border-radius: 0;
+            border: 0;
+            height: 75px;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $nextcloud-blue;
+            a {
+                color: $white;
+            }
+        }
     }
     .active {
         font-weight: 600;
-        border-bottom: 3px solid white;
     }
 }
 .navbar > .container-fluid {
@@ -206,32 +237,39 @@ footer {
         @media (min-width: $break-small) {
             margin: 0 0 0 10px;
         }
+        a:hover {
+            background: none !important;
+        }
+        @media (min-width: $navbar-breaksize) {
+            a:hover {
+                color: white;
+            }
+        }
     }
-    li a:hover {
-        background: none !important;
-    }
-    li:before {
-        display: inline-block;
-        position: relative;
-        padding-bottom: 1px;
-    }
-    li:after {
-        content: '';
-        display: block;
-        margin: auto;
-        height: 3px;
-        width: 0;
-        background: transparent;
-        transition: width .2s ease, background-color .2s ease;
-    }
-    li:not(.btn-primary):not(.active):hover:before {
-        width: 100%;
-        background: white;
-        transition: width .2s ease-in;
-    }
-    li:not(.btn-primary):not(.active):hover:after {
-        width: 100%;
-        background: white;
+    @media (min-width: $navbar-breaksize) {
+        li:before {
+            display: inline-block;
+            position: relative;
+            padding-bottom: 1px;
+        }
+        li:after {
+            content: '';
+            display: block;
+            margin: auto;
+            height: 3px;
+            width: 0;
+            background: transparent;
+            transition: width .2s ease, background-color .2s ease;
+        }
+        li:not(.btn-primary):not(.active):hover:before {
+            width: 100%;
+            background: white;
+            transition: width .2s ease-in;
+        }
+        li:not(.btn-primary):not(.active):hover:after {
+            width: 100%;
+            background: white;
+        }
     }
 }
 /**
@@ -287,8 +325,10 @@ footer {
         ul {
             margin-right: 5%;
             margin-left: 5%;
+            text-align: center;
             li {
                 padding-top: 3vh;
+                font-size: 35px;
             }
         }
     }
@@ -338,7 +378,7 @@ footer {
     text-align: center;
     transition: all 0.3s ease 0s;
         &:hover {
-        background-color: !important $medium-blue;
+        background-color: $medium-blue !important;
 
     }
     &:active {
