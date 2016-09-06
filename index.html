@@ -152,7 +152,7 @@
         <div class="slider-oval"></div>
         <div class="slider-oval"></div>
     </div>
-    <section class="panel panel-workflow">
+    <section class="panel-workflow">
         <div class="container">
             <div class="row introducing-nc-10">
                 <div class="container">
@@ -174,7 +174,7 @@
             </div>
         </div>
     </section>
-    <section class="panel panel-monitoring hidden">
+    <section class="panel-monitoring hidden">
         <div class="container">
             <div class="row introducing-nc-10">
                 <div class="container">
@@ -197,7 +197,7 @@
             </div>
         </div>
     </section>
-    <section class="panel panel-authentication hidden">
+    <section class="panel-authentication hidden">
         <div class="container">
             <div class="row introducing-nc-10">
                 <div class="container">
@@ -221,7 +221,7 @@
             </div>
         </div>
     </section>
-    <section class="panel panel-authentication hidden">
+    <section class="panel-authentication hidden">
         <div class="container">
             <div class="row introducing-nc-10">
                 <div class="container">
@@ -279,6 +279,8 @@
     } else {
         $('section:nth(0)').removeClass('hidden')
         $('#pinContainer section .right-text-grey:nth(0)').css('opacity', '1.0');
+        $('#pinContainer').css('width', 'inherit');
+        $('#pinContainer').css('height', 'inherit');
     }
 </script>
 
