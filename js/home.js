@@ -28,7 +28,7 @@ $(window).load(function() {
     ];
     elements.forEach(function(key) {
         new Waypoint({
-            element: document.getElementById('get-nextcloud-button'),
+            element: document.getElementById('why-nextcloud'),
             handler: function() {
                 anim.play();
             }
