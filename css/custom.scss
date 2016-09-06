@@ -195,7 +195,7 @@ footer {
             position: fixed;
             bottom: 0;
             margin-left: -5%;
-            width: 100%;
+            width: 105%;
             border-radius: 0;
             border: 0;
             height: 75px;
@@ -203,7 +203,7 @@ footer {
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: $nextcloud-blue;
+            background-color: $medium-blue;
             a {
                 color: $white;
             }
