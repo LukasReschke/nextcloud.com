@@ -221,6 +221,13 @@ footer {
     .btn-primary a {
         color: white !important;
     }
+
+    .navbar-collapse {
+        @media (max-width: $break-small) {
+            background-color: $white;
+            margin-left: -6% !important;
+        }
+    }
 }
 
 /**
@@ -234,6 +241,8 @@ footer {
         min-height: 100vh;
         background-color: $nextcloud-blue;
         margin-left: -6% !important;
+        box-shadow: none;
+        transition: all .2s ease-in;
 
         ul {
             margin-right: 5%;
