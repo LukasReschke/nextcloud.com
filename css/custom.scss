@@ -1,4 +1,5 @@
 $dark-blue: #2a2a36;
+$medium-blue: #0073B2;
 $nextcloud-blue: #0082c9;
 $medium-grey: #555555;
 $white: #ffffff;
@@ -109,7 +110,6 @@ footer {
         line-height: 1.8;
         color: #ffffff;
         width: 140px;
-        padding-left: 16px
     }
 }
 /**
@@ -214,8 +214,10 @@ footer {
 /**
  * Overwrite button colors
  */
+
 .btn-primary {
     background-color: $nextcloud-blue;
+    overflow: hidden;
     border: none;
     border-radius: 100px;
     font-weight: bold;
@@ -223,11 +225,24 @@ footer {
     height: 60px;
     font-size: 18px;
     font-family: 'Lato', sans-serif;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+        &:hover {
+        background-color: !important $medium-blue;
+    
+    }
+    &:active {
+        -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+        box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+        background-color: $medium-blue;
+    }
 }
 
 /**
  * Home page jumbotron
  */
+
 .jumbotron {
     background-image: url("./img/home/t-o-p-banner@2x.png"),linear-gradient(to bottom, #0080cc, #3e9ed8 100%, #d8d8d8);
     margin-top: 100px;
@@ -282,6 +297,7 @@ footer {
 /**
  * Home page: Why Nextcloud?
  */
+
 .icon-row {
     padding-bottom: 100px;
 }
