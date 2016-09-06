@@ -5,6 +5,7 @@ $medium-grey: #555555;
 $white: #ffffff;
 $font-stack: 'Open Sans', Frutiger, Calibri, 'Myriad Pro', Myriad, sans-serif !important;
 $break-small: 768px;
+$navbar-breaksize: 1080px;
 
 .introducing-slider {
     float: right;
@@ -117,7 +118,7 @@ footer {
  */
 
 // This breaks the navigation already at 1080px since we have too many entries otherwise to display those all properly
-@media (max-width: 1080px) {
+@media (max-width: $navbar-breaksize) {
     .navbar-header {
         float: none;
     }
@@ -262,7 +263,7 @@ footer {
     }
 
     .navbar-collapse {
-        @media (max-width: $break-small) {
+        @media (max-width: $navbar-breaksize) {
             background-color: $white;
             margin-left: -6% !important;
         }
@@ -273,7 +274,7 @@ footer {
  * Collapsed navbar
  */
 .navbar-collapse {
-    @media (max-width: $break-small) {
+    @media (max-width: $navbar-breaksize) {
         padding-left: 0;
         padding-right: 0;
         width: calc(100vw + 1%);
