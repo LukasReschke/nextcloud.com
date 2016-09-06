@@ -293,8 +293,10 @@ footer {
         width: 100%;
         background: #656565;
     }
-    .active {
-        border-bottom: 3px solid #656565 !important;
+    @media (min-width: $navbar-breaksize) {
+        .active {
+            border-bottom: 3px solid #656565 !important;
+        }
     }
     .btn-primary a {
         color: white !important;
