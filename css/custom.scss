@@ -467,6 +467,11 @@ footer {
 .section-title {
     padding-top: 130px;
     padding-bottom: 100px;
+    @media (max-width: 768px) {
+        padding-top: 80px;
+        padding-bottom: 50px;
+        margin: 0;
+    }
 }
 
 /**
@@ -512,6 +517,7 @@ footer {
     padding-right: 0;
     background-image: url('./img/home/perfect-for-home-and-business.png');
     background-size: cover;
+    
 }
 #perfect-for-home-and-business h2 {
     font-size: 60px;
@@ -635,17 +641,23 @@ footer {
     }
 }
     .icon-row {
-    padding-bottom: 100px;
+    padding-bottom: 0px;
     text-align: center;
         h4 {
         font-size: 22px;
         padding-top: 25px;
+        margin-bottom: 10px;
         }
         .highlights {
         font-size: 18px;
         color: #434343;
         line-height: 1.6;
         font-weight: 100;
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -0%);
+        width: 70%;
         }
         .section-title {
         padding-top: 130px;
@@ -663,5 +675,7 @@ footer {
         font-size: 14px;
 
     }
+    #perfect-for-home-and-business {
+        background-image: url("./img/home/perfect-for-home-and-business_mobile.png");
+    }
 }
-
