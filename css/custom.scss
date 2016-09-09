@@ -33,15 +33,18 @@ $navbar-breaksize: 1080px;
     }
 }
 
-.introducing-nc-10 img {
-    height: 40vh;
-    display: block;
-    margin: 0 auto;
-    @media (max-width: $break-small) {
-        width: 90%;
-        height: 90%;
+.introducing-nc-10 {
+    padding-top: 100px;    
+        img {
+        height: 40vh;
         display: block;
         margin: 0 auto;
+            @media (max-width: $break-small) {
+            width: 90%;
+            height: 90%;
+            display: block;
+            margin: 0 auto;
+        }
     }
 }
 
@@ -461,22 +464,13 @@ footer {
 .icon-row h4 {
     padding-top: 39px;
 }
-.highlights {
+.highlights__text {
     font-size: 20px;
     color: #434343;
     line-height: 1.36;
     font-weight: 100;
-    width: 80%;
 }
-.section-title {
-    padding-top: 130px;
-    padding-bottom: 100px;
-    @media (max-width: 768px) {
-        padding-top: 80px;
-        padding-bottom: 50px;
-        margin: 0;
-    }
-}
+
 
 /**
  * Home page: Introducing Nextcloud 10
@@ -564,19 +558,26 @@ footer {
 .community-icon {
     height:207px;
     width: 177px;
-    display: inline-block;
+    @media (max-width: 1200px) {
+        margin: auto;
+    }
+        
 }
 
 .privacy-icon {
     height:200px;
     width: 202px;
-    display: inline-block;
+    @media (max-width: 1200px) {
+        margin: auto;
+    }
 }
 
 .flexibility-icon {
     height:206px;
     width: 205px;
-    display: inline-block;
+    @media (max-width: 1200px) {
+        margin: auto;
+    }
 }
 
 /**
@@ -635,6 +636,8 @@ footer {
         line-height: 1.6;
         width: 250px;
     }
+    
+    
 
     footer {
     height: 100%;
@@ -662,34 +665,7 @@ footer {
         width: 140px;
     }
 }
-    .icon-row {
-    padding-bottom: 0px;
-    text-align: center;
-        h4 {
-        font-size: 22px;
-        padding-top: 25px;
-        margin-bottom: 10px;
-        }
-        .highlights {
-        font-size: 18px;
-        color: #434343;
-        line-height: 1.6;
-        font-weight: 100;
-        position: relative;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -0%);
-        width: 70%;
-        }
-        .section-title {
-        padding-top: 130px;
-        padding-bottom: 100px;
-        }
-        .img {
-        margin-top: 50px;
-        }
-    }
-
+    
     .jumbotron > .container-fluid > .col-md-6 > p > a {
         width: 160px;
         height: 60px;
@@ -703,4 +679,52 @@ footer {
     .navbar {
 
     }
+}
+
+
+.Section-Why-nextcloud {
+    padding-top: 130px;
+    @media (max-width: $break-small) {
+        padding-top: 80px;
+    }
+}
+
+.highlights {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: -16px 0 0 -16px;
+    padding: 0;
+    list-style: none;
+    @media (max-width: 1200px) {
+        display: block;
+        text-align: center;
+        margin: 0 10px 0 10px;
+    }
+    
+}
+
+.highlights__align{
+    padding-top: 100px;
+    flex-basis: 33.33333%;
+    max-width: 33.33333%;
+    padding-left: 64px;
+        &:first-child {
+        padding-left: 0px;
+    }
+    @media (max-width: 1200px) {
+        flex-basis: auto;
+        max-width: none;
+        padding-left: 0;
+        padding-top: 50px;
+    }
+}
+
+.Section-Introducing-Nextcloud {
+    padding-top: 130px;
 }

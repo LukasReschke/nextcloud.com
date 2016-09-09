@@ -28,12 +28,12 @@ $(window).load(function() {
     ];
     elements.forEach(function(key) {
         new Waypoint({
-            element: document.getElementById('why-nextcloud'),
+            element: document.getElementById('Section-Why-nextcloud'),
             handler: function() {
                 anim.play();
             }
         });
-        var animContainer = document.querySelectorAll('#why-nextcloud div [data-name='+key+']')[0];
+        var animContainer = document.querySelectorAll('#Section-Why-nextcloud div [data-name='+key+']')[0];
         var params = {
             container: animContainer,
             renderer: 'svg',

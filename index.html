@@ -53,7 +53,7 @@
     </style>
 </head>
 <body>
-
+<section class="Header-Navigation">
 <nav class="navbar navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -81,6 +81,7 @@
         </div>
     </div>
 </nav>
+</section>
 
 <div class="container-fluid">
     <div class="row jumbotron">
@@ -94,45 +95,38 @@
     </div>
 </div>
 
-<div class="container" id="why-nextcloud">
-    <div class="row">
-        <h2 class="text-center section-title">Why Nextcloud?</h2>
-    </div>
-    <div class="row icon-row">
-        <div class="col-md-4">
-            <div class="community-icon" data-animation-path="img/home/community/" data-anim-loop="false" data-name="community"></div>
-
-            <h4>Community</h4>
-            <p class="highlights">
-                Enjoy constant improvements
+<section class=".Section Section-Why-nextcloud" id="Section-Why-nextcloud">
+    <div class="container">
+        <h2 class="text-center">Why Nextcloud?</h2>
+        <div class="highlights">
+            <div class="highlights__align">
+                <div class="community-icon" data-animation-path="img/home/community/" data-anim-loop="false" data-name="community"></div>
+                <h4>Community</h4>
+                <p class="highlights__text">Enjoy constant improvements
                 from a thriving and transparent,
                 all open-source community
                 development model, free of
-                lockins or paywalls.
-            </p>
-        </div>
-        <div class="col-md-4">
-            <div class="privacy-icon" data-animation-path="img/home/privacy/" data-anim-loop="false" data-name="privacy"></div>
-            <h4>Privacy</h4>
-            <p class="highlights">
-                Keep all of your life / business
+                lockins or paywalls.</p>
+            </div>
+            <div class="highlights__align">                
+                <div class="privacy-icon" data-animation-path="img/home/privacy/" data-anim-loop="false" data-name="privacy"></div>
+                <h4>Privacy</h4>
+                <p class="highlights__text">Keep all of your life / business
                 private and secure. Share
                 with only who you choose,
-                and no-one else.
-            </p>
+                and no-one else.</p>
+            </div>
+            <div class="highlights__align">
+                <div class="flexibility-icon" data-animation-path="img/home/flexibility/" data-anim-loop="false" data-name="flexibility"></div>
+                <h4>Flexibility</h4>
+                <p class="highlights__text">Expand Nextcloud's ability
+                to do whatever you want,
+                with Nextcloud apps.</p>
+            </div>
         </div>
-        <div class="col-md-4">
-            <div class="flexibility-icon" data-animation-path="img/home/flexibility/" data-anim-loop="false" data-name="flexibility"></div>
-            <h4>Flexibility</h4>
-            <p class="highlights">
-                Expand Nextcloud's ability
-                to dowhatever you want,
-                with Nextcloud apps.
-            </p>
-        </div>
-    </div>
-</div>
-
+    </div>    
+</section>
+             
 <div class="container-fluid" id="perfect-for-home-and-business">
     <div>
         <h2>Perfect for home and office</h2>
@@ -144,6 +138,7 @@
         <p><a class="btn btn-primary btn-lg" href="#" role="button">Know all the features <span class="glyphicon glyphicon-arrow-right"></span></a></p>
     </div>
 </div>
+<section class="Section-Introducing-Nextcloud">
 <div id="pinContainer">
     <h2 class="text-center section-title">Introducing Nextcloud 10</h2>
     <div class="introducing-slider hidden" style="float:right; width: 200px;">
@@ -246,6 +241,7 @@
         </div>
     </section>
 </div>
+</section>
 <script>
     // Only make the scrolling effect for devices bigger than the 768px in width
     if ($(window).width() > 768) {
