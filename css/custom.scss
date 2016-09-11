@@ -25,12 +25,23 @@ $navbar-breaksize: 1080px;
     justify-content: center;
     align-items: center;
 
-    .active {
+.active {
         width: 7px;
         height: 7px;
         background-color: #0080cc;
         border-radius: 7px;
     }
+}
+
+#pinContainer {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.panel {
+        height: 100%;
+        width: 100%;
+        position: absolute;
 }
 
 .introducing-nc-10 {
@@ -175,8 +186,14 @@ footer {
     padding-top: 25px;
     font-size: 16px;
     @media (min-width: $navbar-breaksize) {
+        li{
+             &:last-child{
+            padding-left: 30px;
+            padding-right: 30px;
+        }
         a {
             color: white;
+            }
         }
         .active a {
             border-bottom: 3px solid white;
@@ -684,6 +701,10 @@ footer {
 
 .Section-Why-nextcloud {
     padding-top: 130px;
+    @media (max-width: 1367px) {
+        padding-top: 60px;
+    }
+        
     @media (max-width: $break-small) {
         padding-top: 80px;
     }
@@ -726,5 +747,87 @@ footer {
 }
 
 .Section-Introducing-Nextcloud {
+    background-color: transparent;
+    overflow: hidden;
+    height: calc(100vh - 100px);
+    position: relative;
     padding-top: 130px;
+    @media (max-height: 800px) {
+        padding-top: 90px;
+    }
+    .img__carousel { 
+            padding-top: 100px;
+            position:relative;
+            @media (max-height: 800px) {
+                padding-top: 60px;
+            }
+        img {
+            float: right;
+            width: 582px;
+            height: 474px;
+            @media (max-height: 800px) {
+                width: 490px;
+                height: 402px;
+            }
+        }
+    }
+    .indicators {
+            -webkit-transition: all .5s;
+            transition: all .5s;
+            opacity: 1;
+            position: absolute;
+            z-index: 2;
+            bottom: 50vh;
+            right: 0%;
+            .btn__carousel{
+                margin-top: 10px;
+                width: 14px;
+                height: 14px;
+                color: transparent;
+                border: 1px solid $nextcloud-blue;
+                background-color: $nextcloud-blue;
+                border-radius: 50%;
+                padding: 0;
+                -webkit-transform: scale(.5);
+                -ms-transform: scale(.5);
+                transform: scale(.5);
+                -webkit-transition: all 250ms ease-in-out;
+                transition: all 250ms ease-in-out;
+                &:active{
+                        background-color: transparent;
+                        -webkit-transform: scale(1);
+                        -ms-transform: scale(1);
+                        transform: scale(1);
+                        }
+                }
+        }
+    .top__features{
+        padding-top: 150px;
+        max-width: 582px;
+        .top__features__container{
+            margin-left: 40px;
+            h4{
+                margin: 0;
+            }
+            p{
+                font-size: 18px;
+                font-weight: 300;
+                line-height: 1.6;
+                margin-top: 15px;
+                margin-bottom: 40px;
+            }
+            .hide {
+                display: none;
+            }
+        }
+    }
 }
+
+
+
+
+
+
+
+
+
