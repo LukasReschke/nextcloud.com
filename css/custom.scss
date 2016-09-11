@@ -303,6 +303,9 @@ footer {
     transition: all .2s ease-in;
     background: white;
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.09);
+    @media (max-height:800px) {
+        display: none;
+    }
     a {
         color: #656565 !important;
     }
@@ -753,7 +756,8 @@ footer {
     position: relative;
     padding-top: 130px;
     @media (max-height: 800px) {
-        padding-top: 90px;
+        padding-top: 60px;
+        height: 100vh;
     }
     .img__carousel { 
             padding-top: 100px;
@@ -804,6 +808,9 @@ footer {
     .top__features{
         padding-top: 150px;
         max-width: 582px;
+        @media (max-height: 800px) {
+            padding-top: 90px;
+        }
         .top__features__container{
             margin-left: 40px;
             h4{
